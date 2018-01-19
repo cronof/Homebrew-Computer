@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/Users/WE__J/Desktop/Final Project/Precess-CPU/Process.xst" -ofn "C:/Users/WE__J/Desktop/Final Project/Precess-CPU/Process.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCF.ucf -p xc3s400-tq144-5 "Process.ngc" Process.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o Process_map.ncd Process.ngd Process.pcf 
+par -w -intstyle ise -ol high -t 1 Process_map.ncd Process.ncd Process.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Process.twx Process.ncd -o Process.twr Process.pcf -ucf UCF.ucf 
+xst -intstyle ise -ifn "C:/Users/WE__J/Desktop/Final Project/Precess-CPU/Process.xst" -ofn "C:/Users/WE__J/Desktop/Final Project/Precess-CPU/Process.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCF.ucf -p xc3s400-tq144-5 "Process.ngc" Process.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o Process_map.ncd Process.ngd Process.pcf 
+par -w -intstyle ise -ol high -t 1 Process_map.ncd Process.ncd Process.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Process.twx Process.ncd -o Process.twr Process.pcf -ucf UCF.ucf 
+xst -intstyle ise -ifn "C:/Users/WE__J/Desktop/Final Project/Precess-CPU/Process.xst" -ofn "C:/Users/WE__J/Desktop/Final Project/Precess-CPU/Process.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCF.ucf -p xc3s400-tq144-5 "Process.ngc" Process.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o Process_map.ncd Process.ngd Process.pcf 
+par -w -intstyle ise -ol high -t 1 Process_map.ncd Process.ncd Process.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Process.twx Process.ncd -o Process.twr Process.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f Process.ut Process.ncd 

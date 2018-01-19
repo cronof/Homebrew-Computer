@@ -1,0 +1,2 @@
+vhdl work "ipcore_dir/test_mem.vhd"
+verilog work "Process.v"
