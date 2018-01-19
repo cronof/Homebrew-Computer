@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/WE__J/Desktop/Final Project/TestBench_Process/Process.xst" -ofn "C:/Users/WE__J/Desktop/Final Project/TestBench_Process/Process.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF_Origi.ucf -p xc3s400-tq144-5 "Process.ngc" Process.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o Process_map.ncd Process.ngd Process.pcf 
+par -w -intstyle ise -ol high -t 1 Process_map.ncd Process.ncd Process.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Process.twx Process.ncd -o Process.twr Process.pcf -ucf UCF_Origi.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF_TestBench.ucf -p xc3s400-tq144-5 "Process.ngc" Process.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o Process_map.ncd Process.ngd Process.pcf 
+par -w -intstyle ise -ol high -t 1 Process_map.ncd Process.ncd Process.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Process.twx Process.ncd -o Process.twr Process.pcf -ucf UCF_TestBench.ucf 
