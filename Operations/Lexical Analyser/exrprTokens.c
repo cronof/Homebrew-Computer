@@ -1,3 +1,20 @@
+
+
+
+// constants for tokens and their values
+#define NUMKEYS 2
+typedef enum token_types 
+{
+  LET, ID, INT, LPAREN, RPAREN, NEWLINE, ASSIGNOP, 
+  PLUSOP, MINUSOP, MULTOP, DIVOP, SCANEOF
+}Token;
+char *tokSyms[] = {"let", "var", "num", "(", ")", "\n", "=", 
+             		"+", "-", "*", "/", "eof"};
+char *keywords[NUMKEYS] = {"let", "SCANEOF"};
+Token keywordToks[NUMKEYS] = {LET, SCANEOF};
+
+
+
 Token currToken;
 int lineNum = 1;   // num lines read in
 int main(void)
