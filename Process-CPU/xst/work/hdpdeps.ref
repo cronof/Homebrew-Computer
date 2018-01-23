@@ -1,8 +1,0 @@
-V3 3
-FL "C:/Users/WE__J/Desktop/Final Project/Precess-CPU/ipcore_dir/test_mem.vhd" 2017/12/17.17:35:49 P.58f
-EN work/test_mem 1513507035 \
-      FL "C:/Users/WE__J/Desktop/Final Project/Precess-CPU/ipcore_dir/test_mem.vhd" \
-      PB ieee/std_logic_1164 1364358218
-AR work/test_mem/test_mem_a 1513507036 \
-      FL "C:/Users/WE__J/Desktop/Final Project/Precess-CPU/ipcore_dir/test_mem.vhd" \
-      EN work/test_mem 1513507035

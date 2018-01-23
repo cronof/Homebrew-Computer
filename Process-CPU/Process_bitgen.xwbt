@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\WE__J\Desktop\Final Project\Precess-CPU\Process.ncd
-OUTFILE=C:\Users\WE__J\Desktop\Final Project\Precess-CPU\Process.bit
-FAMILY=Spartan3
-PART=xc3s400-5tq144
-WORKINGDIR=C:\Users\WE__J\Desktop\Final Project\Precess-CPU
-LICENSE=WebPack
-USER_INFO=__0_0_0
