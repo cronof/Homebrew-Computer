@@ -10,4 +10,4 @@
 > 1 week
 * Chapter 1-2
 > 2 week
-* exrprToken.c file
+* exrprToken.c file in the Lexical-analyser step
