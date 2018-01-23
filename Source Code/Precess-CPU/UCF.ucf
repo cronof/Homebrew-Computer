@@ -1,0 +1,18 @@
+
+
+# Clock 25 MHz
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "clk"  LOC = "P127" ;
+#RESET
+NET "rst" LOC = "P44" ;
+#
+#Main LED's
+#
+NET "out<0>" LOC = "P70" ;
+NET "out<1>" LOC = "P77" ;
+NET "out<2>" LOC = "P69" ;
+NET "out<3>" LOC = "P76" ;
+NET "out<4>" LOC = "P74" ;
+NET "out<5>" LOC = "P79" ;
+NET "out<6>" LOC = "P73" ;
+NET "out<7>" LOC = "P78" ;
